@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -111,3 +112,119 @@ nav {
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
+
+.banner{
+    background: url("./Img/lidye-1Shk_PkNkNw-unsplash.jpg") no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+.featured-recipes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.photos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.couleur-blanche{
+    display: flex;
+    color: white;
+    justify-content: center;
+    font-family: "Great Vibes",cursive;
+    padding-top: 2em;
+}
+
+.photos li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.photos li {
+    display: block;
+    text-align: center;
+}
+
+.photos li a img {
+    margin: 0 10px 0 10px;
+    border-radius:50%;
+    border: 20px solid rgba(0, 0, 0, .2);
+    transition: all 0.8 ease 0s;
+
+}
+.photos li a img:hover{
+    border: 20px solid rgba(0, 0, 0, .9);
+}
+
+.nom{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+ @media screen and (max-width: 980px){
+    banner{
+        background: url("./Img/lidye-1Shk_PkNkNw-unsplash.jpg") no-repeat center center;
+        background-attachment: fixed;
+        background-size: cover;
+        height: auto;
+    }
+    
+    .featured-recipes {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .photos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .couleur-blanche{
+        display: flex;
+        color: white;
+        justify-content: center;
+        font-family: "Great Vibes",cursive;
+        padding-top: 2em;
+    }
+    
+    .photos li a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    
+    .photos li {
+        display: block;
+        text-align: center;
+    }
+    
+    .photos li a img {
+        margin: 0 10px 0 10px;
+        border-radius:50%;
+        border: 20px solid rgba(0, 0, 0, .2);
+        transition: all 0.8 ease 0s;
+    
+    }
+    .photos li a img:hover{
+        border: 20px solid rgba(0, 0, 0, .9);
+    }
+    
+    .nom{
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+} 
+
