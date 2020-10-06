@@ -28,3 +28,26 @@ const navSlide = () => {
 
 }
 navSlide();
+
+/************* HEADER ************/
+
+
+
+/************** RECETTE PAGE **************/
+
+
+
+const slide = document.querySelector('.slide');
+const buttonNext = document.querySelector('#buttonNext');
+const buttonPrev = document.querySelector('#buttonPrev');
+const containerSlide = document.querySelector('.slideShow');
+
+buttonNext.addEventListener('click', () => {
+
+})
+
+buttonPrev.addEventListener('click', () => {
+
+})
+
+/************** RECETTE PAGE **************/

@@ -113,6 +113,8 @@ nav {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
+/************* HEADER **************/
+
 .banner{
     background: url("./Img/lidye-1Shk_PkNkNw-unsplash.jpg") no-repeat center center;
     background-attachment: fixed;
@@ -227,4 +229,50 @@ nav {
     }
 
 } 
+
+/*************** RECETTE PAGE ***************/
+
+.sectionRecette{
+    width: 100%;
+    
+}
+
+.recetteLeft{
+    background-color: #5d4954;
+    opacity: 0.5;
+    width: 60%;
+    height: 100%;
+    border: 2px solid black;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.containerSlide{
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+#slideShow{
+    height: 350px;
+    display: flex;
+
+}
+
+.slide {
+    height: 350px;
+    width: 60%;
+}
+
+.slide  {
+    height: 350px;
+    width: 100%;
+}
+
+.img{
+    height:350px
+}
+.recetteRight{
+    background-color: #adbfd8;
+}
 
