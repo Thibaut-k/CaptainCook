@@ -1,12 +1,160 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <!----- RESPONSIVE META ----->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----- Google font LINK ----->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <!---- local CSS LINK ----->
     <link rel="stylesheet" href="style.css">
+
+    <!---- FONT AWESOME LINK ---->
+    <script src="https://kit.fontawesome.com/5ed943be7f.js" crossorigin="anonymous"></script>
+
+    <!----- TITLE ----->
     <title>Document</title>
 </head>
 <body>
-    <h1>BONJOUR TOI</h1>
+    
+    <!----- RECENT RECIPES BLOCK ----->
+    <section class="recipes__container">
+        <section class="listing-recent-recipes">
+            <h2 class="recent-recipes-title">Recent Recipes</h2>
+            <!----- RECIPES CATEGORIES ----->
+            <div class="listing-recent-categories">
+                <ul class="listing-container">
+                    <li>
+                        <a href="#">
+                            Desert(1)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Fish(3)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Meat(5)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Pasta(1)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Pizza(2)
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!----- RECENT RECIPES IMAGES ----->
+            <div class="mainCard">
+                <div class="card">
+                    <div class="card-contents">
+                        <a href="#">
+                            <img src="./img/home/3-250x250.jpg" alt="">
+                            <span>Cheesecake</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-contents">
+                        <a href="#">
+                            <img src="./img/home/featured-5-250x250.jpg" alt="">
+                            <span>Fish with guacamole sauce</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-contents">
+                        <a href="#">
+                            <img src="./img/home/thumbnail-4-250x250.jpg" alt="">
+                            <span>Cheese pie</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-contents">
+                        <a href="#">
+                            <img src="./img/home/thumbnail-6-250x250.jpg" alt="">
+                            <span>Lasagna</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!------ BLOG RECIPES BLOCK-->
+        <section class="recipes__blog">
+            <h2>Blog</h2>
+            <div class="recipes-blog-container">
+                <div class="recipes-blog-contents">
+                    <a href="#" class="blog-content-image">
+                        <img src="./img/home/hero-250x250.jpg" alt="">
+                    </a>
+                    <div class="recipes-blog-excerpt">
+                        <a href="#">Lorem dolor sit amet</a>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam nulla id magni in voluptatem quis, eaque necessitatibus velit inventore sapiente, voluptates exercitationem.</p>
+                    </div>
+                </div>
+                <div class="recipes-blog-contents">
+                    <a href="#" class="blog-content-image">
+                        <img src="./img/home/spices-spice-cinnamon-garlic-pepper-cloves-250x250.jpg" alt="">
+                    </a>
+                    <div class="recipes-blog-excerpt">
+                        <a href="#">Lorem dolor sit amet</a>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam nulla id magni in voluptatem quis, eaque necessitatibus velit inventore sapiente, voluptates exercitationem.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!------ FOOTER ----->
+        <section class="recipes__footer">
+            <div class="footer__container">
+                <div class="bottom__navbar">
+                    <ul class="footer__navigation__bar">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Recipes</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__logo">
+                    <a href="#">captainCook</a>
+                </div>
+                <div class="footer__social__media">
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </section>
 </body>
 <script src="script.js"></script>
 </html>

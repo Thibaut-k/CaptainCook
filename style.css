@@ -1,0 +1,246 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*------------------------------------------------
+    RECENT RECIPES BLOCK
+-----------------------------------------------*/
+.recipes__container {
+    background-color: #FFF;
+    width: 100%;
+}
+
+.listing-recent-recipes {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+}
+
+.listing-recent-recipes h2.recent-recipes-title {
+    font-family: 'Great Vibes', cursive;
+    margin-bottom: 20px;
+    font-size: 2.2em;
+    color: #585858;
+}
+
+/**** RECENT RECIPES CARD, IMAGES ****/
+.mainCard {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.card {
+    height: 315px;
+    width: 300px;
+    margin: 0px 20px 0px 20px;
+    border-radius: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-contents {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-contents > a > img{
+    width: 100%;
+    height: auto;
+    padding-bottom: 15px;
+}
+
+.card-contents > a{
+    text-decoration: none;
+    color: #585858;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.card-contents > a:hover {
+    color: #A9C245;
+}
+
+
+/***** RECENT RECIPE CATEGORIES *****/
+.listing-recent-categories {
+    height: auto;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.all__recipes__title {
+    width: 100%;
+    background-color: #A9C245;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    margin-bottom: 20px;
+}
+
+.listing-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.listing-container > li {
+    margin: 15px 10px 15px 10px;
+    list-style: none;
+}
+
+.listing-container > li > a {
+    text-decoration: none;
+    color: #999999;
+    border: solid 1px #999999;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+}
+
+.listing-container > li > a:hover {
+    color: #FFF;
+    background-color: #A9C245;
+    border-color: #A9C245;
+}
+
+/*--------------------------------------
+    HOME RECIPES BLOG
+---------------------------------------*/
+
+.recipes__blog {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+}
+
+.recipes__blog h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.2em;
+    color: #585858;
+}
+
+.recipes-blog-container {
+    display: flex;
+    width: 100%;
+    background-color: rgba(0,0,0,0.05);
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipes-blog-container > div {
+    display: flex;
+}
+
+.recipes-blog-contents {
+    display: flex;
+    align-items: center;
+    /*border: 1px solid black;*/
+    width: 700px;
+    height: 300px;
+}
+
+/*.recipes-blog-contents:first-child {
+    background-color: red;
+}*/
+
+.recipes-blog-contents > a.blog-content-image > img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.recipes-blog-excerpt {
+    /*border: solid 1px black;*/
+    text-align: left;
+    margin-left: 50px;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.recipes-blog-excerpt > a {
+    text-decoration: none;
+    color: #A9C245;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2em;
+    margin-bottom: 35px;
+}
+
+.recipes-blog-excerpt > p {
+    color: rgba(0,0,0,0.6);
+    font-size: 1.1em;
+}
+
+
+/*------------------------------------
+                FOOTER
+-------------------------------------*/
+.recipes__footer {
+    width: 100%;
+}
+
+.footer__container {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom__navbar {
+    width: 100%;
+}
+
+.footer__navigation__bar {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__navigation__bar > li {
+    list-style: none;
+    margin: 20px 10px 20px 10px;
+}
+
+.footer__navigation__bar > li > a {
+    text-decoration: none;
+    color: #585858;
+    font-size: 1.1em;
+}
+
+.footer__logo > a {
+    font-family: 'Great Vibes', cursive;
+    text-decoration: none;
+    font-size: 2.3em;
+    color: #585858;
+    margin-bottom: 20px;
+}
+
+.footer__social__media {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__social__media > a {
+    
+}
+
+.footer__social__media > a > i {
+    font-size: 1.8em;
+    margin: 0px 10px 0px 10px;
+    color: #000;
+}
