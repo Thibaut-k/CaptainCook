@@ -322,8 +322,8 @@ nav {
 }
 
 .card-contents > a > img{
-    width: 100%;
-    height: auto;
+    width: 260px;
+    height: 260px;
     padding-bottom: 15px;
 }
 
