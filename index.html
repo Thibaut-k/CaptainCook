@@ -15,8 +15,10 @@
     <!---- FONT AWESOME LINK ---->
     <script src="https://kit.fontawesome.com/5ed943be7f.js" crossorigin="anonymous"></script>
 
+    <script src="redirect.js" async></script>
+
     <!----- TITLE ----->
-    <title>Document</title>
+    <title>Accueil</title>
 </head>
 <body>
      <!----------- HEADER ---------> 
@@ -28,13 +30,13 @@
         </div>
         <ul class="nav-links">
             <li>
-                <a href="#">Accueil</a>
+                <a href="" id="acceuil">Accueil</a>
             </li>
             <li>
-                <a href="#">Recettes</a>
+                <a href="#" id="recipes">Recettes</a>
             </li>
             <li>
-                <a href="#">Contact</a>
+                <a href="#" id="contact">Contact</a>
             </li>
             <li>
                 <a href="#">crée ma recette</a>
@@ -148,7 +150,7 @@
                 <div class="card">
                     <div class="card-contents">
                         <a href="#">
-                            <img src="./img/home/3-250x250.jpg" alt="">
+                            <img id="switch" class="image-switch" src="./img/home/3-250x250.jpg" alt="">
                             <span>Cheesecake</span>
                         </a>
                     </div>
@@ -172,7 +174,7 @@
                 <div class="card">
                     <div class="card-contents">
                         <a href="#">
-                            <img src="./img/home/thumbnail-6-250x250.jpg" alt="">
+                            <img src="./img/home/anna-pelzer-IGfIGP5ONV0-unsplash.jpg" alt="">
                             <span>Lasagna</span>
                         </a>
                     </div>
@@ -244,8 +246,8 @@
             </div>
         </section>
     </section>
-</body>
-<script src="script.js"></script>
-<script src="scriptBanner.js"></script>
+    
+    <script src="script.js"></script>
 
+</body>
 </html>

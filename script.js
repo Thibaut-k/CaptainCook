@@ -35,6 +35,59 @@ navSlide();
 //                 HEADER NAV-BAR - FIN
 // --------------------------------------------------/
 
+
+// /-------------------------------------------------
+//                  PAGE RECETTE - FIN
+// --------------------------------------------------/
+
+/*-------------------------------------------------
+                    REDIRECT CLASS 
+--------------------------------------------------*/
+
+class Redirect {
+
+    constructor(hrefId, pageToRedirect) {
+        this.hrefId = hrefId
+        this.pageToRedirect = pageToRedirect
+        
+        this.redirect(this.hrefId, this.pageToRedirect)
+    
+    }
+
+    /* function to redirect to another page onClick 
+        id = id name of the clicable element
+        pageName = page name, ex : index.html
+    */
+    redirect = (id, pageName) => {
+        id = document.getElementById(id)
+        id.addEventListener("click", (e) => {
+            e.preventDefault()
+            window.location.href = `${pageName}.html`
+        })
+    }
+
+}
+
+let onReady = () => {
+    new Redirect("recipes", "all-recipes")
+    new Redirect("acceuil", "index")
+    new Redirect("contact", "contact")
+}
+
+/* if page is loaded */
+if (document.readyState !== "loading") {
+    onReady()
+}
+
+/* execute the function once DOM is fully loaded */
+document.addEventListener("DOMContentLoaded", onReady);
+
+// /-------------------------------------------------
+//                 REDIRECT CLASS - FIN
+// --------------------------------------------------/
+
+
+
 // /-------------------------------------------------
 //                     PAGE RECETTE 
 // --------------------------------------------------/
@@ -101,15 +154,6 @@ const recetteData = [
   const linkRecette3 = document.querySelector("#recette3");
   const linkRecette4 = document.querySelector("#recette4");
 
-  nameR.innerHTML = recetteData[0].name;
-  nbPartR.innerHTML = recetteData[0].nbPart;
-  igrediR.innerHTML = recetteData[0].ingrediants;
-  prepaR.innerHTML = recetteData[0].prepa;
-
-  console.log(linkRecette1)
-  console.log(linkRecette2)
-  console.log(linkRecette3)
-  console.log(linkRecette4)
 
   linkRecette1.addEventListener('click', () =>{
     nameR.innerHTML = recetteData[1].name;
@@ -144,16 +188,13 @@ const recetteData = [
 
 
 // /-------------------------------------------------
-//                  PAGE RECETTE - FIN
-// --------------------------------------------------/
-
-
-
-// /-------------------------------------------------
 //                     BANNER
 // --------------------------------------------------/
 
+// slideIndex à revoir
 var slideIndex = 0;
+var slideIndex = 1;
+// slideIndex à revoir
 showSlides(slideIndex);
 
 function plusSlides(n) {
