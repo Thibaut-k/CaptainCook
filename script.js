@@ -31,10 +31,80 @@ navSlide();
 
 /************* HEADER ************/
 
+/************ BANNER ***************/
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  
+  slides[slideIndex-1].style.display = "block";  
+}
 
 
 
 
+
+var slideIndex = 0;
+showSlides();
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+/********** */
+
+
+
+var slideIndex = 1;
+showSlide(slideIndex);
+
+function plusSlides(n) {
+  showSlide(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlide(slideIndex = n);
+}
+
+function showSlide(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    
+  }
+  slides[slideIndex-1].style.display = "block";  
+ 
+}
+
+/************ BANNER ***************/
 
 
 /************** RECETTE PAGE **************/
@@ -138,46 +208,3 @@ const recetteData = [
 /************** RECETTE PAGE **************/
 
 
-
-
-class Redirect {
-
-    constructor(hrefId, pageToRedirect) {
-        this.hrefId = hrefId
-        this.pageToRedirect = pageToRedirect
-
-        this.redirect(this.hrefId, this.pageToRedirect)
-
-    }
-
-        id = id 
-        pageName = recettePage.html
-    
-    redirect = (id, recettePage) => {
-        id = document.getElementById(id)
-        id.addEventListener("click", (e) => {
-            e.preventDefault()
-            window.location.href = $recettePage.html
-        })
-    }
-
-}
-
-let onReady = () => {
-    new Redirect("recipes", "all-recipes")
-    new Redirect("acceuil", "index")
-    new hoverEffect({
-        parent: document.getElementsByClassName("image-switch"),
-        intensity: 0.2,
-        image1: document.querySelector(".image-switch").src = "../img/home/3-250x250.jpg",
-        displacementImage: document.querySelector(".image-switch").src = "../img/home/diss.png "
-    })
-}
-
-
-if (document.readyState !== "loading") {
-    onReady()
-}
-
-
-document.addEventListener("DOMContentLoaded", onReady);
