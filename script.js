@@ -1,5 +1,7 @@
 
-/**************** HEADER *****************/
+// /-------------------------------------------------
+//                     HEADER NAV-BAR
+// --------------------------------------------------/
 
 const navSlide = () => {
     const burger = document.querySelector('.burger');
@@ -29,86 +31,13 @@ const navSlide = () => {
 }
 navSlide();
 
-/************* HEADER ************/
+// /-------------------------------------------------
+//                 HEADER NAV-BAR - FIN
+// --------------------------------------------------/
 
-/************ BANNER ***************/
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  
-  slides[slideIndex-1].style.display = "block";  
-}
-
-
-
-
-
-var slideIndex = 0;
-showSlides();
-
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-
-  slides[slideIndex-1].style.display = "block";  
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
-}
-/********** */
-
-
-
-var slideIndex = 1;
-showSlide(slideIndex);
-
-function plusSlides(n) {
-  showSlide(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlide(slideIndex = n);
-}
-
-function showSlide(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-    
-  }
-  slides[slideIndex-1].style.display = "block";  
- 
-}
-
-/************ BANNER ***************/
-
-
-/************** RECETTE PAGE **************/
-
+// /-------------------------------------------------
+//                     PAGE RECETTE 
+// --------------------------------------------------/
 
 
 const recetteData = [
@@ -177,12 +106,17 @@ const recetteData = [
   igrediR.innerHTML = recetteData[0].ingrediants;
   prepaR.innerHTML = recetteData[0].prepa;
 
+  console.log(linkRecette1)
+  console.log(linkRecette2)
+  console.log(linkRecette3)
+  console.log(linkRecette4)
 
   linkRecette1.addEventListener('click', () =>{
     nameR.innerHTML = recetteData[1].name;
     nbPartR.innerHTML = recetteData[1].nbPart;
     igrediR.innerHTML = recetteData[1].ingrediants;
     prepaR.innerHTML = recetteData[1].prepa;
+    console.log('bonjour')
   })
 
   linkRecette2.addEventListener('click', () =>{
@@ -190,21 +124,102 @@ const recetteData = [
     nbPartR.innerHTML = recetteData[2].nbPart;
     igrediR.innerHTML = recetteData[2].ingrediants;
     prepaR.innerHTML = recetteData[2].prepa;
+    console.log('bonjour')
   })
+
     linkRecette3.addEventListener('click', () =>{
         nameR.innerHTML = recetteData[3].name;
         nbPartR.innerHTML = recetteData[3].nbPart;
         igrediR.innerHTML = recetteData[3].ingrediants;
         prepaR.innerHTML = recetteData[3].prepa;
+        console.log('bonjour')
   })
     linkRecette4.addEventListener('click', () =>{
         nameR.innerHTML = recetteData[4].name;
         nbPartR.innerHTML = recetteData[4].nbPart;
         igrediR.innerHTML = recetteData[4].ingrediants;
         prepaR.innerHTML = recetteData[4].prepa;
+        console.log('bonjour')
   })
 
 
-/************** RECETTE PAGE **************/
+// /-------------------------------------------------
+//                  PAGE RECETTE - FIN
+// --------------------------------------------------/
 
 
+
+// /-------------------------------------------------
+//                     BANNER
+// --------------------------------------------------/
+
+var slideIndex = 0;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  
+  slides[slideIndex-1].style.display = "block";  
+}
+
+var slideIndex = 0;
+showSlides();
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+/********** */
+
+
+
+var slideIndex = 1;
+showSlide(slideIndex);
+
+function plusSlides(n) {
+  showSlide(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlide(slideIndex = n);
+}
+
+function showSlide(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    
+  }
+  slides[slideIndex-1].style.display = "block";  
+ 
+}
+
+// /-------------------------------------------------
+//                     BANNER - FIN
+// --------------------------------------------------/
