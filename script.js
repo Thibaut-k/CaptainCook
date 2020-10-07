@@ -36,18 +36,42 @@ navSlide();
 /************** RECETTE PAGE **************/
 
 
+const recetteData = [
+    {
+        name: "Quiche au thon",
+        nbPart:"1 personnes",
+        ingrediants:"zenfnzejfoznefjznfnzekf",
+        lvlRecette: "Facile",
+        tempsPrepa: "30 min",
+        prepa:"sdvnsdnvjk,skcnk,qsocqksncqsncksq",
+    },
+    {
+        name: "Pizza à l'annanas",
+        nbPart:"1 personnes",
+        ingrediants:"zenfnzejfoznefjznfnzekf",
+        lvlRecette: "Facile",
+        tempsPrepa: "30 min",
+        prepa:"sdvnsdnvjk,skcnk,qsocqksncqsncksq",
+    },
+    {
+        name: "Ramen",
+        nbPart:"1 personnes",
+        ingrediants:"zenfnzejfoznefjznfnzekf",
+        lvlRecette: "Facile",
+        tempsPrepa: "30 min",
+        prepa:"sdvnsdnvjk,skcnk,qsocqksncqsncksq",
+    },
+    {
+        name: "Bolognaise",
+        nbPart:"1 personnes",
+        ingrediants:"zenfnzejfoznefjznfnzekf",
+        lvlRecette: "Facile",
+        tempsPrepa: "30 min",
+        prepa:"sdvnsdnvjk,skcnk,qsocqksncqsncksq",
+    },
 
-const slide = document.querySelector('.slide');
-const buttonNext = document.querySelector('#buttonNext');
-const buttonPrev = document.querySelector('#buttonPrev');
-const containerSlide = document.querySelector('.slideShow');
+];
 
-buttonNext.addEventListener('click', () => {
 
-})
-
-buttonPrev.addEventListener('click', () => {
-
-})
 
 /************** RECETTE PAGE **************/
