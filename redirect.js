@@ -23,7 +23,6 @@ class Redirect {
             window.location.href = `${pageName}.html`
         })
     }
-
 }
 
 let onReady = () => {
