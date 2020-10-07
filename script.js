@@ -75,6 +75,7 @@ function showSlides() {
 /********** */
 
 
+
 var slideIndex = 1;
 showSlide(slideIndex);
 
@@ -100,9 +101,9 @@ function showSlide(n) {
  
 }
 
+
+
+
 /***************/
-
-
-
 
 
