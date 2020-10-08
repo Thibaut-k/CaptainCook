@@ -121,7 +121,7 @@ nav {
     }
 
     /*------------------------------
-        END RECIPES HOME 
+       BANNER
     --------------------------------*/
 }
 
@@ -169,18 +169,45 @@ nav {
     align-items: center;
     height: auto;
 }
+.featured-recipes-recette {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
 
 .photos{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.couleur-blanche{
+
+.photos-recette{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 20vh;
+}
+.white-color{
+    display: flex;
+    color: white;
+    justify-content: center;
+    font-family: "Great Vibes",cursive;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-size: 4em;
+
+}
+
+.white-color-recette{
     display: flex;
     color: white;
     justify-content: center;
     font-family: "Great Vibes",cursive;
     padding-top: 2em;
+    font-size: 10vh;
 }
 
 .photos li a {
@@ -191,6 +218,18 @@ nav {
 .photos li {
     display: block;
     text-align: center;
+}
+
+.photos-recette li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.photos-recette li {
+    display: block;
+    text-align: center;
+    font-family: "Great Vibes cursive";
+    font-size: 5vh;
 }
 
 .photos li a img {
@@ -205,7 +244,7 @@ nav {
     border: 20px solid rgba(0, 0, 0, .9);
 }
 
-.nom{
+.name{
     text-transform: uppercase;
     color: #fff;
     font-size: 16px;
@@ -782,4 +821,39 @@ padding-bottom: 20px;
 }
 .reseauIcone img {
     width: 2rem;
+}
+
+
+
+
+
+
+.hero {
+    padding: 0px 0;
+    background: #a9c245;
+    font-size: 14px;
+    -webkit-box-shadow: inset 0 15px 16px -4px rgba(0,0,0,0.08);
+    box-shadow: inset 0 15px 16px -4px rgba(0,0,0,0.08);
+    background-repeat: no-repeat;
+    background-position: 0 20%;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    -webkit-transition: all 3000ms ease-out;
+    -moz-transition: all 3000ms ease-out;
+    -o-transition: all 3000ms ease-out;
+    transition: all 3000ms ease-out;
+}
+
+.block-meta div:last-child {
+    border: 0;
+}
+
+.block-meta div {
+    display: inline-block;
+    border-right: solid 1px rgba(255,255,255,0.3);
+    color: #fff;
+    text-align: left;
+    padding: 4px 15px;
+    font-weight: 300;
+    font-size: 12px;
 }
