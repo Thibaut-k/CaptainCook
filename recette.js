@@ -65,16 +65,6 @@ const recetteData = [
   const linkRecette3 = document.querySelector("#recette3");
   const linkRecette4 = document.querySelector("#recette4");
 
-  nameR.innerHTML = recetteData[0].name;
-  nbPartR.innerHTML = recetteData[0].nbPart;
-  igrediR.innerHTML = recetteData[0].ingrediants;
-  prepaR.innerHTML = recetteData[0].prepa;
-
-  console.log(linkRecette1)
-  console.log(linkRecette2)
-  console.log(linkRecette3)
-  console.log(linkRecette4)
-
   linkRecette1.addEventListener('click', () =>{
     nameR.innerHTML = recetteData[1].name;
     nbPartR.innerHTML = recetteData[1].nbPart;

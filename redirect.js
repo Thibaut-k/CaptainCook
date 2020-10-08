@@ -4,11 +4,11 @@
 
 class Redirect {
 
-    constructor(hrefId, pageToRedirect) {
-        this.hrefId = hrefId
+    constructor(hrefClass, pageToRedirect) {
+        this.hrefClass = hrefClass
         this.pageToRedirect = pageToRedirect
         
-        this.redirect(this.hrefId, this.pageToRedirect)
+        this.redirect(this.hrefClass, this.pageToRedirect)
     
     }
 
@@ -16,9 +16,9 @@ class Redirect {
         id = id name of the clicable element
         pageName = page name, ex : index.html
     */
-    redirect = (id, pageName) => {
-        id = document.getElementById(id)
-        id.addEventListener("click", (e) => {
+    redirect = (className, pageName) => {
+        className = document.getElementsByClassName(className)
+        className.addEventListener("click", (e) => {
             e.preventDefault()
             window.location.href = `${pageName}.html`
         })
@@ -28,7 +28,14 @@ class Redirect {
 let onReady = () => {
     new Redirect("recipes", "all-recipes")
     new Redirect("acceuil", "index")
+    new Redirect("contact", "contact")
+    new Redirect("accueil2", "recettePage")
+    new Redirect("accueilLogo", "index")
+    new Redirect("accueilLogo2", "index")
+    new Redirect("recette", "index")
+    new Redirect("recette", "index")
 }
+
 
 /* if page is loaded */
 if (document.readyState !== "loading") {
