@@ -27,8 +27,10 @@ class Redirect {
 }
 
 let onReady = () => {
-    new Redirect("recipes", "all-recipes")
     new Redirect("acceuil", "index")
+    new Redirect("recipes", "all-recipes")
+    new Redirect("contact", "contact")
+    new Redirect("todolist", "toDo")
 }
 
 /* if page is loaded */
