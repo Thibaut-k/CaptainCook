@@ -23,21 +23,21 @@
     <nav>
         <div class="logo">
             <h4>
-                <a href="#" id="acceuil" style="text-decoration: none; color: black;">Captain Cook</a>
+                <a href="#" id="acceuil-logo" style="text-decoration: none; color: black;">Captain Cook</a>
             </h4>
         </div>
         <ul class="nav-links">
             <li>
-                <a href="#" class="acceuil">Accueil</a>
+                <a href="#" id="acceuil">Accueil</a>
             </li>
             <li>
-                <a href="#" class="recipes">Recettes</a>
+                <a href="#" id="recette">Recettes</a>
             </li>
             <li>
-                <a href="#" class="contact">Contact</a>
+                <a href="#" id="contact">Contact</a>
             </li>
             <li>
-                <a href="#">crée ma recette</a>
+                <a href="#" id="recette_create">crée ma recette</a>
             </li>
         </ul>
         <div class="burger">
@@ -72,7 +72,7 @@
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
         
-        </div>
+    </div>
     <h2 class="couleur-blanche">Featured recipes</h2>
     <div class="featured-recipes">
         <ul class="photos">
@@ -147,33 +147,44 @@
             <div class="mainCard">
                 <div class="card">
                     <div class="card-contents">
-                        <a href="#" class="recette">
+                        <a href="#" id="recette2">
                             <img src="./img/home/3-250x250.jpg" alt="">
-                            <span><a href="#" class="recette">Cheesecake</a></span>
+                            <span id="recetteChild">cheesecake</span>
                         </a>
                     </div>
                 </div>
+
                 <div class="card">
                     <div class="card-contents">
-                        <a href="#" class="recette">
+                        <a href="#" id="recette3">
+                            <img src="./img/home/3-250x250.jpg" alt="">
+                            <span id="recetteChild1">Fish with guacamole sauce</span>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- <div class="card">
+                    <div class="card-contents">
+                        <a href="#" id="recette2">
                             <img src="./img/home/featured-5-250x250.jpg" alt="">
-                            <span><a href="#" class="recette">Fish with guacamole sauce</a></span>
+                            <span id="recetteChild">Fish with guacamole sauce</span>
                         </a>
                     </div>
-                </div>
+                </div> -->
                 <div class="card">
                     <div class="card-contents">
-                        <a href="#" class="recette">
+                        <a href="#" id="recette4">
                             <img src="./img/home/thumbnail-4-250x250.jpg" alt="">
-                            <span><a href="#" class="recette">Cheese pie</a></span>
+                            <span id="recetteChild2">Cheese pie</span>
                         </a>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-contents">
-                        <a href="#" class="recette">
+                        <a href="#" id="recette5">
                             <img src="./img/home/thumbnail-6-250x250.jpg" alt="">
-                            <span><a href="#" class="recette">Lasagna</a></span>
+                            <span id="recetteChild3">Lasagna</spanid=>
                         </a>
                     </div>
                 </div>
@@ -225,7 +236,7 @@
                     </ul>
                 </div>
                 <div class="footer__logo">
-                    <a href="#" id="acceuil" style="text-decoration: none; color: black;">Captain Cook</a>
+                    <a href="#" id="acceuil-footer" style="text-decoration: none; color: black;">Captain Cook</a>
                 </div>
                 <div class="footer__social__media">
                     <a href="#">
@@ -246,9 +257,7 @@
     </section>
 
 </body>
-<script src="redirect.js"></script>
+<script src="redirect.js" type="module"></script>
 <script src="script.js"></script>
 <script src="scriptBanner.js"></script>
-
-
 </html>
