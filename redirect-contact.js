@@ -34,6 +34,7 @@ let onReady = () => {
     new Redirect("acceuil-logo", "index")
     new Redirect("recette_create", "recettePage")
     new Redirect("acceuil-footer", "index")
+    new Redirect("todolist", "toDo")
 
 }
 

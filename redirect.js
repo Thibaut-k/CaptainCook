@@ -47,7 +47,6 @@ let recetteData = [
     }
 
   ];
-console.log("recetteData", recetteData)
 /*-------------------------------------------------
                     REDIRECT CLASS 
 --------------------------------------------------*/
@@ -82,7 +81,7 @@ let onReady = () => {
     new Redirect("recette", "all-recipes")
     new Redirect("contact", "contact")
     new Redirect("acceuil-logo", "index")
-    new Redirect("recette_create", "recettePage")
+    // new Redirect("recette_create", "recettePage")
     new Redirect("acceuil-footer", "index")
 
     // new Redirect("acceuil", "index")
