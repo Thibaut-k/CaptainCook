@@ -85,6 +85,10 @@ let onReady = () => {
     new Redirect("recette_create", "recettePage")
     new Redirect("acceuil-footer", "index")
 
+    // new Redirect("acceuil", "index")
+    // new Redirect("recipes", "all-recipes")
+    // new Redirect("contact", "contact")
+    new Redirect("todolist", "toDo")
 }
 
 
